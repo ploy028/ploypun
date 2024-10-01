@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Reel Gaze</title>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function updateTime() {
+        const now = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+        document.getElementById('current-time').innerHTML = now.toLocaleString('en-US', options);
+    }
+
+    setInterval(updateTime, 1000);
+    updateTime(); // เรียกใช้งานครั้งแรกเพื่อไม่ให้รอ 1 วินาทีแรก
+</script>
+ <style>
+        #current-time {
+            font-size: 24px;
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body onLoad="MM_preloadImages('Banner.png')">
+<table width="1667" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <th height="52" colspan="4" bgcolor="#CB6668" scope="row">
+            <div id="current-time"></div>
+        </th>
+    </tr>
+    <tr>
+      <th height="68" colspan="4" bgcolor="#000000" scope="row"><figure>
+        <figcaption><img src="today.png" width="1366" height="768" alt=""/></figcaption>
+      </figure></th>
+    </tr>
+    <tr>
+      <th height="290" align="left" valign="top" scope="row"><table width="227" height="220" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <th width="227" height="43" bgcolor="#DFD6D6" scope="row"><a href="index.html" style="text-decoration: none; color: #000000; font-size: 18px;">Home</a></th>
+          </tr>
+          <tr>
+            <th height="51" bgcolor="#DFD6D6" scope="row"><a href="review1.html" style="text-decoration: none; color: #000000; font-size: 18px;">Review</a></th>
+          </tr>
+          <tr>
+            <th height="45" bgcolor="#DFD6D6" style="font-size: 18px" scope="row"><a href="about us.html" style="text-decoration: none; color: #000000;">About us</a></th>
+          </tr>
+          <tr>
+            <th height="52" bgcolor="#DFD6D6" scope="row"><a href="https://www.rmutp.ac.th/"style="text-decoration: none; color: #000000;">RMUTP.</a></th>
+          </tr>
+          <tr>
+            <th bgcolor="#DFD6D6" scope="row"><a href="https://bus.rmutp.ac.th/" style="text-decoration: none; color: #000000;">คณะบริหารธุรกิจ</a></th>
+          </tr>
+        </tbody>
+      </table></th>
+      <th align="left" valign="top" scope="row"><img src="sbhfvk8bjypIoyXrjfp1-o.jpg" width="462" height="632" alt=""/></th>
+      <th align="left" valign="top" scope="row"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','Banner.png',1)"><img src="ww.png" alt="" width="581" height="652" id="Image"></a></th>
+      <th align="left" valign="top" scope="row"><img src="1111.jpeg" width="462" height="632" alt=""/></th>
+    </tr>
+    <tr>
+      <th width="227" height="290" align="left" valign="top" scope="row"><script type="text/javascript" src="https://www.stat-counter.org/count/gc4n"></script><br></th>
+      <th width="461" align="left" valign="top" scope="row">&nbsp;</th>
+      <th width="584" align="left" valign="top" scope="row"><p>&nbsp;</p></th>
+      <th width="395" align="left" valign="top" scope="row">&nbsp;</th>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
